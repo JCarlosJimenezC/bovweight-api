@@ -17,12 +17,4 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    /**
-     * Este test falla intencionalmente para demostrar branch protection.
-     * GitHub bloqueará el PR si este job no pasa.
-     */
-    public function test_branch_protection_demo(): void
-    {
-        $this->assertTrue(false, 'Test fallido intencionalmente para demostrar Branch Protection Rules.');
-    }
 }

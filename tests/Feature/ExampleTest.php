@@ -16,4 +16,9 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_branch_protection_demo(): void
+    {
+        $this->assertTrue(false, 'Test fallido intencionalmente para demostrar Branch Protection Rules.');
+    }
 }
